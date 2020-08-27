@@ -25,6 +25,12 @@ public class Book {
         this.ISBNNumber = "";
     }
 
+    public Book() {
+        this.bookName = "";
+        this.authorName = "";
+        this.ISBNNumber = "";
+    }
+
     public String getBookName() {
         return bookName;
     }
