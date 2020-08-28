@@ -20,4 +20,12 @@ public class Library {
             currentAvailableBooks[i] = new Book();
         }
     }
+
+    public Book[] getCurrentAvailableBooks() {
+        return currentAvailableBooks;
+    }
+
+    public void setCurrentAvailableBooks(Book[] currentAvailableBooks) {
+        this.currentAvailableBooks = currentAvailableBooks;
+    }
 }
