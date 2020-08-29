@@ -34,8 +34,22 @@ public class Student {
         this.issuedBooks = new Book[0];
     }
 
+    /**
+     * This method is used to add book to the student issued book array.
+     *
+     * @param bookName The name of the book that we want to add to the student issued book array.
+     */
     public void addBook(String bookName) {
         System.out.println(bookName + " book added to list of student issued books:");
+    }
+
+    /**
+     * This method is used to return issued book.
+     *
+     * @param returnBookName The name of the book that you want to return.
+     */
+    public void doReturnBook(String returnBookName) {
+        System.out.println(returnBookName + "returned back to the library:r");
     }
 
     public String getStudentName() {

@@ -24,7 +24,7 @@ public class Library {
     }
 
     public Book[] getCurrentAvailableBooks() {
-        return currentAvailableBooks;
+        return currentAvailableBooks.clone();
     }
 
     public void setCurrentAvailableBooks(Book[] currentAvailableBooks) {
