@@ -52,6 +52,15 @@ public class Student {
         System.out.println(returnBookName + " returned back to the library:");
     }
 
+    /**
+     * This is used to return the list of all issued books.
+     */
+    public void listIssuedBooks() {
+        for (Book issuedBook : issuedBooks) {
+            System.out.println(issuedBook);
+        }
+    }
+
     public String getStudentName() {
         return studentName;
     }

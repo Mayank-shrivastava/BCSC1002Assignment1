@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class FrontDesk {
     private static final int ISSUE_BOOK = 1;
     private static final int RETURN_BOOK = 2;
-    private static final int SHOW_ISSUED_BOOKS = 3;
+    private static final int LIST_ISSUED_BOOKS = 3;
     private static final int EXIT = 4;
 
     public static void main(String[] args) {
@@ -32,10 +32,11 @@ public class FrontDesk {
             String studentName;
             int numberOfBooksIssued;
             switch (studentInput) {
-                case ISSUE_BOOK -> {
+                case ISSUE_BOOK:
                     System.out.println("Enter the name of the student:");
                     scanner.nextLine();
                     studentName = scanner.nextLine();
+                    student.setStudentName(studentName);
                     System.out.println("Enter the number of books you want to issue:");
                     numberOfBooksIssued = scanner.nextInt();
                     scanner.nextLine();
@@ -44,14 +45,17 @@ public class FrontDesk {
                         String bookName = scanner.nextLine();
                         student.addBook(bookName);
                     }
-                }
-                case RETURN_BOOK -> {
+                    break;
+                case RETURN_BOOK:
                     String returnBookName;
                     System.out.println("Enter the name of the book that you want to return:");
                     scanner.nextLine();
                     returnBookName = scanner.nextLine();
                     student.doReturnBook(returnBookName);
-                }
+                    break;
+                case LIST_ISSUED_BOOKS:
+                    break;
+                default:
             }
 
         } while (studentInput != EXIT);
