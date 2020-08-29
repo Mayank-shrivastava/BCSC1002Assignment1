@@ -54,6 +54,7 @@ public class FrontDesk {
                     student.doReturnBook(returnBookName);
                     break;
                 case LIST_ISSUED_BOOKS:
+                    student.listIssuedBooks();
                     break;
                 default:
             }
