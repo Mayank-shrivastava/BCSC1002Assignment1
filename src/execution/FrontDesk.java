@@ -32,7 +32,7 @@ public class FrontDesk {
             String studentName;
             int numberOfBooksIssued;
             switch (studentInput) {
-                case ISSUE_BOOK:
+                case ISSUE_BOOK -> {
                     System.out.println("Enter the name of the student:");
                     scanner.nextLine();
                     studentName = scanner.nextLine();
@@ -44,12 +44,14 @@ public class FrontDesk {
                         String bookName = scanner.nextLine();
                         student.addBook(bookName);
                     }
-                    break;
-                case RETURN_BOOK:
+                }
+                case RETURN_BOOK -> {
                     String returnBookName;
                     System.out.println("Enter the name of the book that you want to return:");
+                    scanner.nextLine();
                     returnBookName = scanner.nextLine();
                     student.doReturnBook(returnBookName);
+                }
             }
 
         } while (studentInput != EXIT);

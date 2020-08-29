@@ -49,7 +49,7 @@ public class Student {
      * @param returnBookName The name of the book that you want to return.
      */
     public void doReturnBook(String returnBookName) {
-        System.out.println(returnBookName + "returned back to the library:r");
+        System.out.println(returnBookName + " returned back to the library:");
     }
 
     public String getStudentName() {
