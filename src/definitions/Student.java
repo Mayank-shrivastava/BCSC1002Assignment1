@@ -34,6 +34,10 @@ public class Student {
         this.issuedBooks = new Book[0];
     }
 
+    public void addBook(String bookName) {
+        System.out.println(bookName + " book added to list of student issued books:");
+    }
+
     public String getStudentName() {
         return studentName;
     }
