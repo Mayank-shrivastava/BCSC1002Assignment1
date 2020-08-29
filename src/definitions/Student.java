@@ -27,6 +27,13 @@ public class Student {
         }
     }
 
+    public Student() {
+        this.studentName = "";
+        this.universityRollNumber = 0;
+        this.numberOfBooksIssued = 0;
+        this.issuedBooks = new Book[0];
+    }
+
     public String getStudentName() {
         return studentName;
     }
