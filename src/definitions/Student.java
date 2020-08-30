@@ -10,11 +10,11 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
+    private static final int PREVIOUSLY_ISSUED_BOOKS_NUMBER = 5;
     private String studentName;
     private long universityRollNumber;
     private int numberOfBooksIssued;
     private Book[] issuedBooks;
-    private static final int PREVIOUSLY_ISSUED_BOOKS_NUMBER = 5;
 
     public Student(String studentName, long universityRollNumber) {
         this.studentName = studentName;
