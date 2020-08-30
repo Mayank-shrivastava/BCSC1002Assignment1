@@ -8,7 +8,6 @@ package execution;
 
 import definitions.Book;
 import definitions.Student;
-
 import java.util.Scanner;
 
 public class FrontDesk {
