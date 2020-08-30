@@ -14,6 +14,7 @@ public class Student {
     private long universityRollNumber;
     private int numberOfBooksIssued;
     private Book[] issuedBooks;
+    private static final int PREVIOUSLY_ISSUED_BOOKS_NUMBER = 5;
 
     public Student(String studentName, long universityRollNumber) {
         this.studentName = studentName;
@@ -57,7 +58,7 @@ public class Student {
      */
     public void listIssuedBooks() {
         System.out.println("List of your previously issued book is as follows:");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < PREVIOUSLY_ISSUED_BOOKS_NUMBER; i++) {
             System.out.printf("%d: %s\n", i + 1, "Algorithm" + (i + 1));
         }
     }
