@@ -6,6 +6,7 @@
  * */
 package execution;
 
+import definitions.Book;
 import definitions.Student;
 
 import java.util.Scanner;
@@ -42,8 +43,9 @@ public class FrontDesk {
                     scanner.nextLine();
                     for (int i = 0; i < numberOfBooksIssued; i++) {
                         System.out.println("Enter the name of the books you want to issue:");
-                        String bookName = scanner.nextLine();
-                        student.addBook(bookName);
+                        Book book = new Book();
+                        book.setBookName(scanner.nextLine());
+                        student.addBook(book.getBookName());
                     }
                     break;
                 case RETURN_BOOK:

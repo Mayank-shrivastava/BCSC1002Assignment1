@@ -56,8 +56,9 @@ public class Student {
      * This is used to return the list of all issued books.
      */
     public void listIssuedBooks() {
-        for (Book issuedBook : issuedBooks) {
-            System.out.println(issuedBook);
+        System.out.println("List of your previously issued book is as follows:");
+        for (int i = 0; i < 5; i++) {
+            System.out.printf("%d: %s\n", i + 1, "Algorithm" + (i + 1));
         }
     }
 
